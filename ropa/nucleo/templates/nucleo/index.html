@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!--CSS-->
+    {% load static %}
+    <link rel="stylesheet" href=" {% static 'nucleo/css/estilo.css' %}">
+    <link rel="stylesheet" href=" {% static 'nucleo/css/clean-blog.min.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--Scroll reveal-->
+    <script src="{% static 'nucleo/js/carro.js' %}"></script>
+    <title>Emyean</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <!-- NAVEGACION IZQUIERDA-->
+
+        <div class="fondo"  style="background-image: url( {% static 'nucleo/img/header.jpg' %})"></div>
+            <nav class="nav-main">
+                <ul class="nav-derecho">
+                    <li>
+                        <a href="{% url 'carro' %}">
+                            <span>Damas</span>
+                            <span>
+                                <i class="fas fa-female"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="li">
+                        <a href="{% url 'index' %}">
+                            <span>Inicio</span>
+                            <span>
+                                <i class="fas fa-home"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <!--NAVEGACION -->
+                <ul class="nav-izqueirdo">
+                    <li>
+                        <a href="{% url 'login' %}">
+                            <span>Iniciar sesion</span>
+                            <span>
+                                <i class="fas fa-sign-in-alt"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'registro' %}">
+                            <span>Registrarse</span>
+                            <span>
+                                <i class="fa-duotone fa-id-card"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!--HEADER-->
+            
+            <header class="header">
+                <p>
+                    Especialmente para ti
+                </p>
+                <a href="{% url 'carro' %}" class="btn">
+                    MIRALO AHORA <i class="fas fa-angle-double-right"></i>
+                </a>
+            </header>
+        </div>
+        <!-- ESCAPARATE-->
+        <div class="escaparate">
+            <div>
+                <img src="{% static 'nucleo/imgMujer/casual1.jpeg' %}" alt="">
+            </div>
+            <div>
+                <h2>CONJUNTO BUSO Y PANTALON </h2>
+                <p>Incluye un buso en color negro con cuello de tortuga y pantalon ajustado
+                </p>
+                <a href="#" class="boton">
+                    IR AHORA <i class="fas fa-angle-double-right"></i>
+                </a>
+            </div>
+        </div>
+        <!--CLASE DE LAS 4 IMAGENES-->
+        <div class="img">
+            <div>
+                <a href="{% url 'carro' %}">
+                    <img src="{% static 'nucleo/imgMujer/casual3.jpeg' %}" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="{% url 'carro' %}">
+                    <img src="{% static 'nucleo/imgMujer/img1.jpeg' %}" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="{% url 'carro' %}">
+                    <img src="{% static 'nucleo/imgMujer/casual5.jpeg' %}" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="{% url 'carro' %}">
+                    <img src="{% static 'nucleo/imgMujer/img5.jpeg' %}" alt="">
+                </a>
+            </div>
+        </div>
+        <!--REDES SOCIALES DE LA PAGINA-->
+        <section class="social">
+            <p>Siguenos en Emyean</p>
+            <div class="links">
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://discord.com" target="_blank">
+                    <i class="fab fa-discord"></i>
+            </div>
+        </section>
+        <!--FOOTER-->
+        <footer>
+            <p class="copyright text-muted">Copyright &copy; 2022 · Emyean </p>
+        </footer>
+    </div>
+</body>
+
+</html>

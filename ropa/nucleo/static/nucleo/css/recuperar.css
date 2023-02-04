@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(img_2/pexels-tembela-bohle-1884584.jpg) no-repeat center;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.Recuperar{
+    width: 400px;
+    height: 250px;
+    background: rgba(167, 151, 151, 0.567);
+    margin: auto;
+    margin-top: 180px;
+    box-shadow: 7px 13px 37px #000000;
+    padding: 20px 30px;
+    border-top: 4px #c2c5e9;
+    color: #000;
+    border-radius: 10%;
+}
+
+.Recuperar h5{
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 20px;
+}
+
+.controls{
+    width: 95%;
+    border: 1px solid #0c0c0c ;
+    margin-bottom: 15px;
+    padding: 11px 10px ;
+    background: #98646a8f;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.button {
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 100px;
+    margin-left: 150px;
+    margin-bottom: 15px;
+    background: #98646a;
+    color: #000;
+    font-size: 18px;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Recuperar input[type="submit"]:hover {
+    cursor: pointer;
+    background: #eaebcd;
+    color: #000;
+}
+
+.Recuperar p{
+    height: 35px;
+    text-align: center;
+    border-bottom: 1px solid;
+}
+
+.Recuperar a{
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Recuperar a:hover{
+    text-decoration: underline;
+}

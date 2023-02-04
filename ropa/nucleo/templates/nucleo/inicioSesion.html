@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emyean</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'nucleo/css/inicioSesion.css' %}">
+</head>
+<body class ="fondo" style="background-image: url( {% static 'nucleo/img/login.jpg' %})">
+    <div class="inicioSesion">
+        <form>
+            <!--nommbreUsuario-->
+            <label for="NombreUsuario">Nombre de Usuario</label>
+            <input type="text" placeholder="Ingrese su Usuario">
+            <!--nommbreUsuario-->
+            <label for="Contraseña">Contraseña</label>
+            <input type="password" placeholder="Ingrese su Contraseña">
+            <input type="submit" value="iniciar Sesion">
+
+            <a href="{% url 'recuperar' %}">¿Olvidaste tu contraseña?</a>
+            <a href="{% url 'registro' %}">¿No tienes una cuenta?</a>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emyean</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'nucleo/css/registro.css' %}">
+</head>
+<body style="background-image: url( {% static 'nucleo/img/login.jpg' %})">
+    <section class="Registro">
+        <h5>Registrarse</h5>
+
+        <input class="controls" type="text" name="Usuario" value="" placeholder="Usuario">
+        <input class="controls" type="text" name="Nombre" value="" placeholder="Nombre">   
+        <input class="controls" type="text" name="Apellido" value="" placeholder="Apellido">
+        <input class="controls" type="text" name="Email" value="" placeholder="Email">          
+        <input class="controls"type="password" name="Contraseña" value="" placeholder="Contraseña">
+        <input class="button"type="submit" name="" value="Registrar">   
+        <p><a href="{% url 'login' %}">Iniciar Sesion</a></p> 
+
+
+    </section>
+    
+</body>
+</html>

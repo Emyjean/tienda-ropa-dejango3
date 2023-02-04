@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  background:  no-repeat center;
+  background-size: cover;
+  font-family: sans-serif;
+ 
+}
+
+.inicioSesion {
+  width: 400px;
+  height: 340px;
+  background: rgba(167, 151, 151, 0.567);
+  margin: auto;
+  margin-top: 180px;
+  box-shadow: 7px 13px 37px #000000;
+  padding: 20px 30px;
+  border-top: 4px #c2c5e9;
+  color: #000;
+  border-radius: 10%;
+}
+
+.inicioSesion label {
+  margin: 0;
+  padding-top: 30px;
+  font-weight: bold;
+  display: block;
+
+}
+
+.inicioSesion input {
+  width: 100%;
+  margin-bottom: 20px;
+
+}
+
+.inicioSesion input[type="text"],
+.inicioSesion input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #000;
+  font-size: 16px;
+}
+
+.inicioSesion input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+ background: #98646a;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px; 
+}
+
+.inicioSesion input[type="submit"]:hover {
+  cursor: pointer;
+  background: #d6d3c9;
+  color: #000;
+}
+
+.inicioSesion a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+}
+
+.inicioSesion a:hover {
+  color: #fff;
+}
